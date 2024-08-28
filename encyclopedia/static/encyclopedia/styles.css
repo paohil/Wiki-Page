@@ -1,0 +1,162 @@
+/* General page styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Linux Libertine', 'Georgia', 'Times New Roman', serif;
+    background-color: #f8f9fa;
+    color: #202122;
+    line-height: 1.6;
+    display: flex;
+}
+
+/* Code block styling */
+code {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    padding: 2px 4px;
+    border-radius: 4px;
+    white-space: pre;
+    font-family: monospace;
+}
+
+/* Header styling */
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    font-weight: normal;
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+/* Main content area styling */
+.main {
+    padding: 20px;
+}
+
+/* Textarea styling */
+textarea {
+    height: 80vh;
+    width: 100%;
+    font-family: monospace;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Search box styling */
+.search {
+    width: 100%;
+    font-size: 15px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Sidebar styling */
+.sidebar {
+    background-color: #f9f9f9;
+    height: 100vh;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+    box-shadow: 2px 0 5px -2px #888;
+    position: fixed;
+    width: 200px;
+    overflow-y: auto;
+    transition: width 0.3s;
+}
+
+.sidebar:hover {
+    width: 250px;
+}
+
+/* Sidebar heading styling */
+.sidebar h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+/* Sidebar link styling */
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #0645ad;
+    font-size: 0.9em;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Content styling with sidebar */
+.content {
+    margin-left: 220px;
+    padding: 20px;
+    width: calc(100% - 220px);
+    transition: margin-left 0.3s, width 0.3s;
+}
+
+.sidebar:hover ~ .content {
+    margin-left: 270px;
+    width: calc(100% - 270px);
+}
+
+/* Search form styling */
+form {
+    margin-top: 20px;
+}
+
+form input[type="text"] {
+    width: calc(100% - 40px);
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+form button {
+    padding: 8px 16px;
+    border: 1px solid #0645ad;
+    background-color: #0645ad;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0b58a2;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Footer styling */
+footer {
+    padding: 20px;
+    background-color: #f1f1f1;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
